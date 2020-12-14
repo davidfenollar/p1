@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treballs RIA DavidFenollar</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto+Mono:wght@600&family=Roboto+Slab:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        /*reset*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+
+
+        header {
+            padding: 0em 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            background-color: #FFCF9C;
+            background-size: cover;
+            background-position: 0em;
+            background-image: url('img/david.jpg');
+            height: 100vh;
+        }
+
+        h1 {
+            font-family: 'DM Serif Display', serif;
+          
+            font-size: 16vw;
+            line-height: 1em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 200;
+            font-size: 7vw;
+              color: #FFCF9C;
+        }
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: 5vw;
+              color: #FFCF9C;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            padding: 0 1em;
+            height: 80px;
+            font-family: 'Roboto mono', monospace;
+            font-weight: 400;
+            text-transform: uppercase;
+            background: #FFCF9C;
+        }
+
+        nav a {
+            font-family: 'Roboto mono', monospace;
+            font-weight: 400;
+            text-decoration: none;
+            color: #000;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            padding: 3em 2em 4em 4em;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            background: #ffffff;
+        }
+
+        section {
+            width: 100%;
+            margin: 0 0 1.6em 0;
+            display: flex;
+            flex-direction: column;
+            height: 348px;
+            background: lightgrey;
+        }
+
+        section figure {
+            padding: 0.8em 0.8em 0 0.8em;
+        }
+
+        section figure img {
+            width: 100%;
+            height: 280px;
+            object-position: bottom;
+            object-fit: cover;
+        }
+
+        section figcaption {
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding-bottom: 1em;
+            padding-top: 1em;
+            width: 100%;
+            height: 150px;
+            font-family: 'Roboto', sans-serif;
+            /*            background: #FFCF9C;*/
+        }
+
+        footer a {
+            color: #000;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .xxss {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .email {
+            text-align: center;
+        }
+
+
+
+
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            body {
+                background: #FFCF9C;
+            }
+        }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            body {
+                background: green;
+            }
+
+            header {
+                background-image: url('img/david.jpg');
+                padding: 0 11em;
+            }
+
+            h1 {
+                font-size: 10vw;
+                line-height: 1em;
+                font-weight: 700;
+            }
+
+            h2 {
+                font-size: 5vw;
+            }
+
+            h3 {
+                font-size: 3vw;
+            }
+
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            section {
+                width: 400px;
+                margin: 0 0 1.6em 0;
+                display: flex;
+                flex-direction: column;
+                height: 348px;
+                background: white;
+            }
+            .grid-container{
+                padding: 0 2vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap; /*força a que els elements que no caben baixen i no es queden en la mateixa fila comprimits*/
+            }
+        }
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            body {
+                background: #FFCF9C;
+            }
+        }
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            body {
+                background: #FFCF9C;
+            }
+        }
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            html{
+                font-size: 23px;
+            }
+            body {
+                background: #FFCF9C;
+            }
+            h1 br{
+                display: none;
+            }
+            h2{
+                font-size: 3vw;
+                width: 100%;
+                text-align: right;
+            }
+            h3{
+                font-size: 2vw;
+                padding: 0 0 10vw;
+                text-align: right;
+            }
+            nav{
+                justify-content: flex-start;
+                padding: 0 11em;
+            }
+            nav a{
+                margin: 0 2.5em 0 0.5em;
+            }
+            section{
+                min-width: 20em;
+                max-width: 23em;
+                height: 203m;
+            }
+            
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Recursos<br> Interactius<br> Aplicats</h1>
+        <h2>2gp - EASDAlcoi</h2>
+        <h3>David Fenollar</h3>
+    </header>
+    <nav class="menu">
+        <a href="#">projectes</a>
+        <a href="#">contacte</a>
+    </nav>
+    <main class="main">
+        <div class="grid-container">
+            <section>
+                <figure>
+                    <img src="img/projecte0.png" alt="">
+                </figure>
+                <figcaption>
+                    <h4>p0_llocweb</h4>
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                    <img src="img/projecte1.png" alt="">
+                </figure>
+                <figcaption>
+                    <h4>p1_portfoli</h4>
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                    <img src="img/projecte0.png" alt="">
+                </figure>
+                <figcaption>
+                    <h4>p0_llocweb</h4>
+                </figcaption>
+            </section>
+            <section>
+                <figure>
+                   <img src="img/projecte0.png" alt="">
+                </figure>
+                <figcaption>
+                    <h4>p0_llocweb</h4>
+                </figcaption>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="xxss">
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">facebook</a>
+        </div>
+        <div class="email">
+            <a href="mailto:davidfeno@gmail.com">Parlem? davidfeno@gmail.com
+            </a>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
